@@ -72,7 +72,7 @@ var auto = () => {
         }
     
         sliderMain.style.left = "-"+sliderItemWidth*slideNumber+"px"
-    }, 4000)
+    }, 5000)
 }
-
 auto()
+
