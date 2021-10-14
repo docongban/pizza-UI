@@ -76,3 +76,23 @@ var auto = () => {
 }
 auto()
 
+
+//Scroll type pizza
+const menu = document.querySelector('.container_type')
+
+const sectionOneOptions = {}
+
+const sectionOneObServer = new IntersectionObserver(function(entries, callback) {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) {
+            menu.classList.add('scroll')
+        } else {
+            menu.classList.remove('scroll')
+        }
+    })
+},sectionOneOptions)
+
+sectionOneObServer.observe(slider)
+
+
+//Change active when scroll
